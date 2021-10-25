@@ -5,7 +5,7 @@ The current architecture was implemented following this guide [Provisioning an E
 
 ### Prerequisites
 
-- AWS account configured. For this example we are using default profile and us-east-2 region
+- AWS account configured. For this example we are using default profile and us-east-1 region
 
 #### Dependencies
 - aws cli
@@ -40,7 +40,10 @@ export the nfs server.
 ```
 export NFS_SERVER=$(terraform output -raw efs)
 ```
-
+In windows
+```
+set NFS_SERVER=$(terraform output -raw efs)
+```
 To install airflow go to the directory `kubernetes/`. [Install Airflow](../kubernetes/README.md)
 
 ## Acknowledgments

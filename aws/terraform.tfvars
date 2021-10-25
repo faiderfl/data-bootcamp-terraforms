@@ -1,4 +1,4 @@
-region = "us-east-2"
+region = "us-east-1"
 
 #### Networking variables ####
 vpc_cidr = "10.0.0.0/16"
@@ -10,8 +10,8 @@ private_subnets_cidr = [
     "10.0.2.0/24"]
 
 availability_zone = [ 
-    "us-east-2a",
-    "us-east-2b"]
+    "us-east-1a",
+    "us-east-1b"]
 
 #### EKS variables ####
 cluster_name = "airflow-eks-data-bootcamp"
