@@ -37,4 +37,6 @@ logs:
     # If using a custom storageClass, pass name here
     storageClassName: nfs-client
 
-
+airflow:
+  extraPipPackages:
+    - "cloudstorage~=0.11.0"
